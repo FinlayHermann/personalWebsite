@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Finlay Hermann</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="navcase">
+        <div class="navbar">
+            <button class="img" onclick="redirect('secret.html')"><img src="logo.png"></button>
+            <div class="buttons">
+                <div class="divider"></div>
+                <button onclick="scrollToElement('headerid')">Home</button>
+                <div class="divider"></div>
+                <button onclick="scrollToElement('aboutid')">About</button>
+                <div class="divider"></div>
+                <button onclick="scrollToElement('resumeid')">Resume</button>
+                <div class="divider"></div>
+                <button onclick="scrollToElement('projectsid')">My Projects</button>
+                <div class="divider"></div>
+                <button onclick="scrollToElement('contactid')">Contact</button>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <button class="navbutton">
+            <a class="navstil">
+                <div class="nav1"></div>
+                <div class="nav2"></div>
+                <div class="nav3"></div>
+            </a>
+        </button>
+    </div>
+    <div class="header" id="headerid">
+        <h1>FINLAY HERMANN</h1>
+        <h2>Programmer • Student • (Webdesigner) </h2>
+    </div>
+    <div class="about" id="aboutid">
+        <h1>About</h1>
+        <div class="aboutw">
+            <h2>About this Website</h2>
+            <p>This website was fully created by me (with the help of books and tutorials). 
+            I made this website because of my "Facharbeit"(specialist work). This website has the purpose of representing me for 
+            future jobs in IT and/or computer science. On this website you will find this little about section, my resume, my best 
+            projects in coding till at least Februrary 9. 2024 and a little contact window, where you can write me an E-Mail to ask 
+            about problems with my code. My specialist work will also be found on this website, it is about "Wie wirken HTML, CSS und 
+            JavaScript zusammen, um eine Website zu erstellen, gestalten und zu steuern?"(How do HTML, CSS and JavaScript work together, 
+            to create, shape and controll a website?). This Website took me about a day to make (full working time), spread across a 1 
+            month period. If you are contacting me, note that your example could probably end up in my defendtion of my specialist work.</p>
+        </div>
+        <div class="aboutme">
+            <h2>About myself</h2>
+            <p>I am a 15 year old student from the Karl-Schmidt-Rottluff-Gymnasium in Chemnitz, Germany. As allready mentioned in the 
+                About this Website section, I'am doing this because of my specialist work in computer science. My skills in computer science 
+                range from fixing the wifi router to programming a website as you see. The source of my skills are porbably due to the fact 
+                that every other family member doesn't know anything about tech or computer science, so if I had problems with tech or anything 
+                related to it I had to teach it myself. This eventually led to me saving for my first PC and later on learning my first programming language 
+                Java, which I gave up very fast to learn Python, because at the age of 12, it was still to complicated for me. In school, we eventually learned 
+                some programming languages, and in 10th grade we had to do our specialist work, so I took the chance to combine my hobby and school and I am currently 
+                doing my specialist work, while creating a resume website for future jobs.</p>
+        </div>
+    </div>
+    <div class="resume" id="resumeid">
+        <h1>Resume</h1>
+        <div class="pdfcase">
+            <object data="Lebenslauf_finlayHermann.pdf" type="application/pdf" class="pdf"></object>
+        </div>
+        <div class="resumedesc">
+            <h2>Current Knowledge</h2>
+            <h3>Languages</h3>
+            <li>German</li>
+            <li>English</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>HTML, CSS, JavaScript</li>
+            <h3>General PC Knowledge</h3>
+            <li>Building</li>
+            <li>Installation</li>
+            <li>Configuration</li>
+            <li>Softwareusage</li>
+        </div>
+
+    </div>
+    <div class="projects" id="projectsid">
+        <h1>My Projects</h1>
+        <div class="python">
+            <h2>Python</h2>
+            <div class="pj">
+                <h3>Voice Assistant (in process)</h3>
+                <p>A little Voice helper to react to German speech and search the internet (powered by google voice-recognition)</p>
+                <br>
+                <a href="Voice Assistant finlayHermann.zip" download>Download</a>
+            </div>
+            <div class="pj">
+                <h3>Colorpicker (hex to rgb and reverse)</h3>
+                <p>A small tkinter GUI made to pick colors and compare them, also used to translate rgb to hex and reverse. (Made with 13, didn't know about hex(rgb_value))</p>
+                <br>
+                <a href="Colorpicker finlayHermann.zip" download>Download</a>
+                <!-- More will be added (most of my code is for private use or a bit on a grey side)-->
+            </div>
+        </div>
+        <div class="Webdev">
+            <h2>HTML, CSS, JavaScript</h2>
+            <div class="pj">
+                <h3>This Website</h3>
+                <p>This is my personal Website for my specialist work and maybe for future job applications.</p>
+                <br>
+                <a href="index.html" download>Download</a>
+            </div>
+            <div class="pj">
+                <h3>Fleischerei Liebers</h3>
+                <p>One of my relatives got me this task, this will be my first job! Wish me luck!</p>
+                <br>
+                <a href="https://www.fleischerei-und-partyservice-liebers.de">Visit</a>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contactid">
+        <h1>Contact</h1>
+        <!-- Big help from https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+        <!-- Da JavaScript keine Emails senden kann habe ich mir erlaubt disen code zu mehr als 50% zu kopieren, da mein Thema PHP nicht umfasst, ich aber trotzdem eine Kontakt möglichkeit haben wollte-->
+        <div class="container">
+            <form action="error.html">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="email">E-Mail</label>
+              <input type="text" id="email" name="email" placeholder="Your E-Mail-Adress..">
+          
+              <label for="country">Country</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your country..">
+          
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+        </div>
+        <div class="links">
+            
+        </div>
+    </div>
+    
+</body>
+
+</html>
