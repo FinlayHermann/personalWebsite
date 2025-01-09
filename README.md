@@ -1,0 +1,1 @@
+This page was created in terms of my Scientific Work or "Facharbeit", it is completely free to use and to copy, but make sure to change the email in the php-File to redirect the contact field (only works with a real webpage, github doesn't support logical code to execute on guthub-pages)
